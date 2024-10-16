@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Ultimate Europe Cities</title>
+    <style>
+        body {
+    background-image: url('blue.jpg'); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the entire viewport */
+    background-position: center; /* Centers the image */
+    background-repeat:repeat; /* Prevents the image from repeating */
+    height: 100vh; /* Makes sure the body takes the full viewport height */
+    margin: 0; /* Removes default margin */
+}
+
+        .star-rating {
+    font-size: 2em; /* Increase star size */
+    color: #ccc; /* Default star color */
+    cursor: pointer; /* Cursor changes to pointer on hover */
+}
+
+.star-rating .star:hover,
+.star-rating .star:hover ~ .star {
+    color: #ff6347; /* Highlight stars on hover */
+}
+
+.star-rating .selected {
+    color: #ff6347; /* Color for selected stars */
+}
+
+#review-text {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+#submit-review {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#submit-review:hover {
+    background-color: #ff4500; /* Darker shade on hover */
+}
+
+#reviews-list {
+    margin-top: 20px;
+}
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 12;
+        }
+        
+        header {
+            background: #c46f6f;
+            color: rgb(0, 0, 0);
+            padding: 40px 20px;
+        }
+
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items:center;
+        }
+
+        nav h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 150px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .hero {
+            background: url('hero-image.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .btn {
+            background: #ff6347;
+            color: white;
+            padding: 20px 20px;
+            text-decoration: none;
+            border-radius: 100px;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .destination-card {
+            display: inline-block;
+            margin: 20px;
+            width: 250px;
+        }
+
+        .destination-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+    
+
+        #about h3 {
+            margin-top: 20px;
+            color: #ff6347; 
+        }
+
+        #about ul {
+            list-style-type: none; 
+            padding: 0;
+        }
+
+        #about ul li {
+            margin: 10px 0; 
+            text-align: left; 
+        }
+
+        #reviews {
+            text-align: left;
+        }
+
+        .review {
+            margin: 20px 0;
+            background: #f9f9f9; 
+            padding: 15px;
+            border-radius: 8px; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+        }
+
+        .review-bar {
+            background: #ff6347;
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+            transition: width 1s; 
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px; 
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            border-radius: 10px; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+        }
+
+        footer {
+            background: #e07979;
+            color: white;
+            text-align: center;
+            padding: 12px 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#summary">Summary</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+      <b>  <textcolor= "black"> <h1>Explore the World</h1>
+        <p><h1>Your adventure begins here.</h1></p>
+        <br>
+        <br></b>
+        <a href="#destinations" class="btn">Discover Now</a>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <Br>
+    <br>
+
+
+    <section id="destinations">
+        <h2>Popular Destinations</h2>
+        <div class="destination-card">
+            <img src="paris.jpg" alt="Paris" loading="lazy">
+            <h3>Paris</h3>
+            <p>The city of love.</p>
+        </div>
+        <div class="destination-card">
+            <img src="italy.jpg" alt="Italy" loading="lazy">
+            <h3>Italy</h3>
+            <p>Art, history, and cuisine</p>
+        </div>
+        <div class="destination-card">
+            <img src="uk.jpg".jpg" alt="United Kingdom" loading="lazy">
+            <h3>Untited Kindgdom</h3>
+            <p>Rich history and culture.</p>
+        </div>
+    </section>
+
+    <section id="summary">
+        <h2>Summary</h2>
+      <p><h2><center> Voyage Agency offers the best travel packages and experiences.
+        Discover breathtaking landscapes, vibrant cultures, and unforgettable adventures to some breathtaking cities such a Paris, Italy and Untited Kindgom!<br>
+       You Don't want to miss this experience! </center> </h2></p>
+     
+    </section>
+
+
+    <section id="gallery">
+        <h2>Our Gallery</h2>
+        <div class="gallery-grid">
+            <img src="people.jpg" alt="Beautiful Landscape" loading="lazy">
+            <img src="food.jpg" alt="Cityscape" loading="lazy">
+            <img src="u.jpg" alt="Cultural Experience" loading="lazy">
+            <img src="itali.jpg" alt="Adventure Trip" loading="lazy">
+            <img src="mountain.jpg" alt="Relaxing Beach" loading="lazy">
+            <img src="louvre.jpg" alt="Mountain View" loading="lazy">
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <img src="vag.png"> 
+       <h4> <p>Welcome to Voyage Agency! We are a dedicated team of travel enthusiasts passionate about helping you discover the world. Our mission is to curate unforgettable travel experiences that cater to every adventurer's needs.</p>
+        <p>With years of experience in the travel industry, we have built strong relationships with local guides, hotels, and service providers to offer you the best deals and insights. Whether you’re looking for a relaxing beach getaway, an adventurous mountain trek, or a cultural city tour, we have something for everyone.</p>
+  <br>
+  <br>
+     <h1> <align center> Word From the CEO </align></h1>
+        <p><h3>Our agency offers hostility as we believe that our customers deserve the best at all times.
+            so you can trust Voyage Agency on this one! 
+            We belive that vacations are really important to clear out your mind and enjoyment is really necessary in life,
+            we will make sure to make this trip memorable one for you!
+            Have a great day!</h3>
+            <br>
+           <b> -Awisha Pandey
+            <br>
+            CEO Voyage Agency
+           </p></b>
+        <marquee><h1>Our Values</h1></marquee>
+        <h4><ul>
+            <li><strong>Integrity:</strong> We prioritize transparency and honesty in all our dealings.</li>
+            <li><strong>Customer-Centric:</strong> Your satisfaction is our top priority.</li>
+            <li><strong>Adventure:</strong> We embrace the spirit of adventure and exploration.</li>
+            <li><strong>Sustainability:</strong> We are committed to promoting sustainable travel practices.</li>
+        </ul></h4>
+    </section>
+        
+        <h2>Customer Reviews</h2>
+        <div class="review">
+            <h3>John Doe</h3>
+            <div class="review-bar" style="width: 90%;">★★★★★</div>
+            <p>"An amazing experience! The team was incredibly helpful, and the destinations were breathtaking."</p>
+        </div>
+        <div class="review">
+            <h3>Jane Smith</h3>
+            <div class="review-bar" style="width: 80%;">★★★★☆</div>
+            <p>"Great service and beautiful destinations! I had a wonderful time, and I can't wait to travel again."</p>
+        </div>
+        <div class="review">
+            <h3>Sam Wilson</h3>
+            <div class="review-bar" style="width: 85%;">★★★★☆</div>
+            <p>"Had a fantastic time exploring new places. The itinerary was well-planned and offered great value!"</p>
+        </div>
+        <div class="review">
+            <h3>Emily Johnson</h3>
+            <div class="review-bar" style="width: 95%;">★★★★★</div>
+            <p>"Absolutely loved my trip! The accommodations were top-notch, and the activities were unforgettable."</p>
+        </div>
+        <div class="review">
+            <h3>Michael Brown</h3>
+            <div class="review-bar" style="width: 75%;">★★★★☆</div>
+            <p>"A good experience overall. Some minor issues, but the staff were quick to resolve them."</p>
+        </div>
+        <section id="reviews">
+            <p> Please leave a reivew of your experience with us!</p>
+            <section id="rating">
+                <h2>Rate Your Experience</h2>
+                <div class="star-rating">
+                    <span class="star" data-value="1">&#9733;</span>
+                    <span class="star" data-value="2">&#9733;</span>
+                    <span class="star" data-value="3">&#9733;</span>
+                    <span class="star" data-value="4">&#9733;</span>
+                    <span class="star" data-value="5">&#9733;</span>
+                </div>
+                <p id="rating-result"></p>
+                
+                <h3>Leave a Review:</h3>
+                <textarea id="review-text" rows="4" placeholder="Write your review here..."></textarea>
+                <button id="submit-review">Submit Review</button>
+                
+                <div id="reviews-list"></div>
+            </section>
+    
+    </section>
+
+
+    <footer id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: voyagersinfo@gmail.com</p>
+        <p>Phone: 00-000-000</p>
+    </footer>
+</body>
+</html>
