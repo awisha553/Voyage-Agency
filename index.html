@@ -5,6 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Ultimate Europe Cities</title>
     <style>
+        image-container {
+            width: 100%; /* Container takes full width */
+            max-width: 600px; /* Limits the container width */
+            overflow: hidden; /* Ensures any overflow is hidden */
+            margin: auto; /* Centers the container */
+        }
+
+        img {
+            width: 50%; /* Makes the image responsive */
+            height: auto; /* Maintains aspect ratio */
+            max-height: 300px; /* Sets a maximum height */
+            object-fit: cover; /* Fills the container */
+        }
         body {
     background-image: url('blue.jpg'); /* Replace with your image path */
     background-size: cover; /* Ensures the image covers the entire viewport */
@@ -181,6 +194,7 @@
 <body>
     <header>
         <nav>
+            <h1>Explore</h1>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#destinations">Destinations</a></li>
@@ -214,19 +228,31 @@
     <section id="destinations">
         <h2>Popular Destinations</h2>
         <div class="destination-card">
+        <div class="card-content">
+            </div>
             <img src="paris.jpg" alt="Paris" loading="lazy">
             <h3>Paris</h3>
             <p>The city of love.</p>
+            <br>
+
+            <a href="https://en.wikipedia.org/wiki/Paris" target="_blank" class="btn">Learn More</a>
+
         </div>
         <div class="destination-card">
             <img src="italy.jpg" alt="Italy" loading="lazy">
             <h3>Italy</h3>
             <p>Art, history, and cuisine</p>
+            <Br>
+            <a href="https://en.wikipedia.org/wiki/Italy" target="_blank" class="btn">Learn More</a>
+
         </div>
         <div class="destination-card">
             <img src="uk.jpg".jpg" alt="United Kingdom" loading="lazy">
             <h3>Untited Kindgdom</h3>
             <p>Rich history and culture.</p>
+            <br>
+            <a href="https://en.wikipedia.org/wiki/UnitedKingdom" target="_blank" class="btn">Learn More</a>
+
         </div>
     </section>
 
@@ -277,7 +303,8 @@
             <li><strong>Sustainability:</strong> We are committed to promoting sustainable travel practices.</li>
         </ul></h4>
     </section>
-        
+      <br>  
+      <br>
         <h2>Customer Reviews</h2>
         <div class="review">
             <h3>John Doe</h3>
